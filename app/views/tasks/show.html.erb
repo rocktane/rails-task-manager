@@ -1,7 +1,10 @@
-<h1><%= @task.title %></h1>
+<div class="container w-25 mt-5">
+  <div class="d-flex justify-content-between">
+    <h1><%= @task.title %></h1>
+    <button type="button" class="btn btn-light"><%= link_to 'Edit task', edit_task_path %></button>
+  </div>
 
-<p> <%= @task.details %> </p>
+  <p> <%= @task.details %> </p>
 
-<p><%= link_to 'edit task', edit_path %></p>
-
-<p><%= link_to 'Back to tasks', tasks_path %></p>
+  <p><%= link_to 'Back to tasks', tasks_path %></p>
+</div>
